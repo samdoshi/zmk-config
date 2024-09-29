@@ -15,3 +15,6 @@ for SIDE in "${SIDES[@]}"; do
 
   cp "build/$SIDE/zephyr/zmk.uf2" "firmware/corneish_zen_v2_$SIDE.uf2"
 done
+
+keymap parse -z config/corneish_zen.keymap >keymap-drawer/corneish_zen.yaml
+keymap draw keymap-drawer/corneish_zen.yaml >keymap-drawer/corneish_zen.svg
