@@ -1,7 +1,7 @@
 build: build-image
   podman run --rm -it \
     -v $(PWD)/config:/app/config:ro \
-    -v $(PWD)/keymap-drawer:/app/keymap-drawer \
+    -v $(PWD)/keymap:/app/keymap \
     -v $(PWD)/firmware:/app/firmware \
     zmk-config \
     build_cornish_zen.sh
@@ -9,7 +9,7 @@ build: build-image
 shell: build-image
   podman run --rm -it \
     -v $(PWD)/config:/app/config:ro \
-    -v $(PWD)/keymap-drawer:/app/keymap-drawer \
+    -v $(PWD)/keymap:/app/keymap \
     -v $(PWD)/firmware:/app/firmware \
     zmk-config \
     bash

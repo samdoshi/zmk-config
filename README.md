@@ -1,1 +1,1 @@
-![](https://raw.githubusercontent.com/samdoshi/zmk-config/refs/heads/main/keymap-drawer/corneish_zen.svg)
+![](https://raw.githubusercontent.com/samdoshi/zmk-config/refs/heads/main/keymap/corneish_zen.svg)
