@@ -1,0 +1,115 @@
+parse_config:
+  layer_legend_map:
+    BRACKET: $$mdi:code-brackets$$
+    NUMBER: $$mdi:numeric$$
+    NAV: $$mdi:arrow-all$$
+    SYMBOL: $$mdi:symbol$$
+    MOUSE: $$mdi:mouse$$
+    F-KEY: $$mdi:alpha-f-box$$
+
+  raw_binding_map:
+    "&caps_word":
+      tap: $$mdi:caps-lock$$
+    "&mmv MOVE_UP":
+      shifted: $$mdi:mouse$$
+      tap: $$mdi:arrow-up$$
+    "&mmv MOVE_DOWN":
+      shifted: $$mdi:mouse$$
+      tap: $$mdi:arrow-down$$
+    "&mmv MOVE_LEFT":
+      shifted: $$mdi:mouse$$
+      tap: $$mdi:arrow-left$$
+    "&mmv MOVE_RIGHT":
+      shifted: $$mdi:mouse$$
+      tap: $$mdi:arrow-right$$
+    "&msc SCRL_UP":
+      shifted: $$mdi:mouse-scroll-wheel$$
+      tap: $$mdi:arrow-up$$
+    "&msc SCRL_DOWN":
+      shifted: $$mdi:mouse-scroll-wheel$$
+      tap: $$mdi:arrow-down$$
+    "&msc SCRL_LEFT":
+      shifted: $$mdi:mouse-scroll-wheel$$
+      tap: $$mdi:arrow-left$$
+    "&msc SCRL_RIGHT":
+      shifted: $$mdi:mouse-scroll-wheel$$
+      tap: $$mdi:arrow-right$$
+    "&mkp LCLK": $$mdi:mouse-left-click$$
+    "&mkp RCLK": $$mdi:mouse-right-click$$
+    "&mkp MCLK": $$mdi:mouse-scroll-wheel$$
+    "&bt BT_CLR":
+      tap: $$mdi:bluetooth$$
+      hold: clear
+    "&bt BT_SEL 0":
+      tap: $$mdi:bluetooth$$
+      hold: 1
+    "&bt BT_SEL 1":
+      tap: $$mdi:bluetooth$$
+      hold: 2
+    "&bt BT_SEL 2":
+      tap: $$mdi:bluetooth$$
+      hold: 3
+    "&bt BT_SEL 3":
+      tap: $$mdi:bluetooth$$
+      hold: 4
+    "&bt BT_SEL 4":
+      tap: $$mdi:bluetooth$$
+      hold: 5
+    "&soft_off":
+      tap: $$mdi:power$$
+      hold: 2 secs
+
+  zmk_keycode_map:
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    SPACE: $$mdi:keyboard-space$$
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    RET: $$mdi:keyboard-return$$
+    BSPC: $$mdi:backspace-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
+    PG_UP: $$mdi:arrow-up-bold$$
+    PG_DN: $$mdi:arrow-down-bold$$
+    HOME: $$mdi:arrow-left-bold$$
+    END: $$mdi:arrow-right-bold$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+    LPAR: "("
+    RPAR: ")"
+    LBKT: "["
+    RBKT: "]"
+    LBRC: "{"
+    RBRC: "}"
+    BSLH: "\\"
+    FSLH: "/"
+    SQT: "'"
+    DQT: '"'
+    GRAVE: "`"
+    TILDE: "~"
+    COMMA: ","
+    DOT: "."
+    SEMI: ";"
+    HASH: "£"
+    AMPS: "&"
+    STAR: "*"
+    DOLLAR: "$"
+    PRCNT: "%"
+    CARET: "^"
+    UNDER: "_"
+    EXCL: "!"
+    AT: "@"
+    MINUS: "-"
+    PLUS: "+"
+    EQUAL: "="
+    RA(N3): "#"

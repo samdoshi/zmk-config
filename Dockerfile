@@ -9,7 +9,8 @@ USER ubuntu
 WORKDIR /app
 
 ENV PATH="$PATH:/home/ubuntu/.local/bin"
-RUN pipx install keymap-drawer
+# RUN pipx install keymap-drawer
+RUN pipx install git+https://github.com/caksoylar/keymap-drawer
 
 COPY config/west.yml config/west.yml
 RUN west init -l config && \
@@ -18,3 +19,10 @@ RUN west init -l config && \
     mkdir -p build
 
 COPY bin/build_cornish_zen.sh /usr/bin
+COPY bin/build_cornish_zen_keymap.sh /usr/bin
+
+# run keymap to cache fonts
+COPY keymap/corneish_zen_dummy.yaml /tmp/corneish_zen.yaml
+COPY keymap/config_dummy.yaml /tmp/config.yaml
+RUN keymap -c /tmp/config.yaml draw /tmp/corneish_zen.yaml >/tmp/corneish_zen.svg
+
