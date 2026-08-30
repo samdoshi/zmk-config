@@ -7,10 +7,10 @@ declare -a SIDES=("left" "right")
 for SIDE in "${SIDES[@]}"; do
   west build \
     --build-dir "build/$SIDE" \
-    --board "corneish_zen_v2_$SIDE" \
+    --board "corneish_zen_$SIDE//zmk" \
     --source zmk/app \
     -- \
     -DZMK_CONFIG=/app/config
 
-  cp "build/$SIDE/zephyr/zmk.uf2" "firmware/corneish_zen_v2_$SIDE.uf2"
+  cp "build/$SIDE/zephyr/zmk.uf2" "firmware/corneish_zen_$SIDE.uf2"
 done
