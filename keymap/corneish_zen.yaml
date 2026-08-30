@@ -252,7 +252,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - .
   - '0'
   - '='
   - {t: ▽, type: trans}
