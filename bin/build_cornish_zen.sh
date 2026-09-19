@@ -8,7 +8,7 @@ for SIDE in "${SIDES[@]}"; do
   west build \
     --build-dir "build/$SIDE" \
     --board "corneish_zen_$SIDE//zmk" \
-    --source zmk/app \
+    --source seth-milliken/app \
     -- \
     -DZMK_CONFIG=/app/config
 

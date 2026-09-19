@@ -6,6 +6,7 @@ manifest:
     - name: zmk
       remote: SethMilliken
       revision: zen-display-patches # custom branch name
+      path: seth-milliken # override default path (otherwise the same as the name)
       import: app/west.yml
   self:
     path: config
