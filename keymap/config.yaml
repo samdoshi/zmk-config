@@ -3,8 +3,6 @@ parse_config:
     BRACKET: $$mdi:code-brackets$$
     NUMBER: $$mdi:numeric$$
     NAV: $$mdi:arrow-all$$
-    SYMBOL: $$mdi:symbol$$
-    MOUSE: $$mdi:mouse$$
     F-KEY: $$mdi:alpha-f-box$$
 
   raw_binding_map:
@@ -94,6 +92,7 @@ parse_config:
     BSLH: "\\"
     FSLH: "/"
     SQT: "'"
+    APOS: "'"
     DQT: '"'
     GRAVE: "`"
     TILDE: "~"

@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corneish_zen, layout_name: default_transform}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - {t: ▽, type: trans}
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - {t: ▽, type: trans}
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
   - {t: Z, h: '$$mdi:apple-keyboard-option$$'}
   - {t: X, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: C, h: '$$mdi:apple-keyboard-control$$'}
@@ -36,32 +36,32 @@ layers:
   - {t: ',', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ., h: '$$mdi:apple-keyboard-shift$$'}
   - {t: /, h: '$$mdi:apple-keyboard-option$$'}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:code-brackets$$'}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:arrow-all$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:code-brackets$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:alpha-f-box$$'}
   - {t: '$$mdi:backspace-outline$$', h: '$$mdi:numeric$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:symbol$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   NAV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-left-click$$
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:arrow-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-right$$', s: '$$mdi:mouse$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:arrow-right$$', s: '$$mdi:mouse-scroll-wheel$$'}
+  - {t: '$$mdi:arrow-down$$', s: '$$mdi:mouse-scroll-wheel$$'}
+  - {t: '$$mdi:arrow-up$$', s: '$$mdi:mouse-scroll-wheel$$'}
+  - {t: '$$mdi:arrow-left$$', s: '$$mdi:mouse-scroll-wheel$$'}
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-up$$
@@ -88,11 +88,11 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   NUMBER:
   - {t: ▽, type: trans}
-  - ''
+  - \
   - '7'
   - '8'
   - '9'
-  - '*'
+  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -100,7 +100,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - '`'
   - '4'
   - '5'
   - '6'
@@ -116,7 +116,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - +
+  - '#'
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
@@ -139,8 +139,8 @@ layers:
   - {t: ▽, type: trans}
   - '['
   - ']'
-  - \
-  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,8 +151,8 @@ layers:
   - {t: ▽, type: trans}
   - (
   - )
-  - '"'
-  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
@@ -166,98 +166,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - $$mdi:keyboard-return$$
   - $$mdi:backspace-outline$$
   - $$mdi:backspace-reverse-outline$$
-  SYMBOL:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '~'
-  - $
-  - '%'
-  - ^
-  - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
-  - '!'
-  - '@'
-  - £
-  - '#'
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
-  - {t: ▽, type: trans}
-  - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-tab$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  MOUSE:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:arrow-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-right$$', s: '$$mdi:mouse$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:arrow-left$$', s: '$$mdi:mouse-scroll-wheel$$'}
-  - {t: '$$mdi:arrow-up$$', s: '$$mdi:mouse-scroll-wheel$$'}
-  - {t: '$$mdi:arrow-down$$', s: '$$mdi:mouse-scroll-wheel$$'}
-  - {t: '$$mdi:arrow-right$$', s: '$$mdi:mouse-scroll-wheel$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - $$mdi:mouse-left-click$$
-  - $$mdi:mouse-right-click$$
-  - $$mdi:mouse-scroll-wheel$$
   F-KEY:
   - {t: ▽, type: trans}
   - F12
@@ -387,3 +301,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [19, 20]
+  k: $$mdi:keyboard-esc$$
+  l: [QWERTY]
