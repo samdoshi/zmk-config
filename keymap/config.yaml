@@ -112,3 +112,4 @@ parse_config:
     PLUS: "+"
     EQUAL: "="
     RA(N3): "#"
+    NUBS: "§"
