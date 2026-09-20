@@ -1,12 +1,22 @@
 build: firmware keymap
 
-firmware: image
+firmware: firmware-cornish firmware-prospector-scanner
+
+firmware-cornish: image
   podman run --rm -it \
     -v $(pwd)/config:/app/config:ro \
     -v $(pwd)/keymap:/app/keymap \
     -v $(pwd)/firmware:/app/firmware \
     zmk-config \
     build_cornish_zen.sh
+
+firmware-prospector-scanner: image
+  podman run --rm -it \
+    -v $(pwd)/config:/app/config:ro \
+    -v $(pwd)/keymap:/app/keymap \
+    -v $(pwd)/firmware:/app/firmware \
+    zmk-config \
+    build_prospector_scanner.sh
 
 keymap: image
   podman run --rm -it \

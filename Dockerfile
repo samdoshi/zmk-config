@@ -18,11 +18,11 @@ RUN west init -l config && \
     west zephyr-export && \
     mkdir -p build
 
-COPY bin/build_cornish_zen.sh /usr/bin
-COPY bin/build_cornish_zen_keymap.sh /usr/bin
-
 # run keymap to cache fonts
 COPY keymap/corneish_zen_dummy.yaml /tmp/corneish_zen.yaml
 COPY keymap/config_dummy.yaml /tmp/config.yaml
 RUN keymap -c /tmp/config.yaml draw /tmp/corneish_zen.yaml >/tmp/corneish_zen.svg
 
+COPY bin/build_cornish_zen.sh /usr/bin
+COPY bin/build_cornish_zen_keymap.sh /usr/bin
+COPY bin/build_prospector_scanner.sh /usr/bin
