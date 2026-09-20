@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -e
+
+declare -a SIDES=("left" "right")
+
+for SIDE in "${SIDES[@]}"; do
+  west build \
+    --build-dir "build/$SIDE" \
+    --board "corneish_zen_$SIDE//zmk" \
+    --shield "settings_reset" \
+    --source zmk-seth-milliken/app \
+    -- \
+    -DZMK_CONFIG=/app/config
+
+  cp "build/$SIDE/zephyr/zmk.uf2" "firmware/corneish_zen_${SIDE}_reset.uf2"
+done
